@@ -1,6 +1,4 @@
 // find duplicate elements
-
-
 const findDuplicate=()=>
 {const arr=[3,1,3,4,5,6,3,4,4,10,15]
 
@@ -12,8 +10,6 @@ console.log(duplicatedElements);
 }
 
 // get the count of duplicate values
-
-
 function getCountDuplicate(){
     const months = ['May', 'Feb', 'Jan', 'Dec', 'May', 'Mar', 'May']
     const countDuplicates = months.reduce((obj, month)=>
@@ -189,41 +185,15 @@ function returnJson(){
           "course": "Biology"
         }
       ]
+    const newList=  stds.map((el)=>{
 
+        let newObj ={
 
-//     const newList=  stds.map((el)=>{
-
-//         let newObj ={
-
-//             name:el.fname + " "+ el.lname,
-//         course: el.course
-//         }
-//         return newObj
-// })
-
-for (let index = 0; index < stds.length; index++) {
-    const el = stds[index];
-    let newObj = {
-        name: el.fname
-    }
-
-    return newObj
-
-    
-}
-
-    console.log(newObj);
-
-    //   for(let i =0; i<stds.length; i++)
-    //   {
-    //     return {
-
-    //        name: stds[i].fname +stds[i].lname,
-    //        course: stds[i].course
-    //     }
-    //     console.log(stds[i].fname)
-    //     // console.log(stds[i]);
-    //   }
-      
+            name:el.fname + " "+ el.lname,
+        course: el.course
+        }
+        return newObj
+})
+console.log(newList);      
 }
 returnJson()
